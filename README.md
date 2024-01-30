@@ -31,3 +31,6 @@ The following emojis were suggested by ChatGPT when asking it to give me emojis 
 3. Space Grotesk
 4. Lexend Family
 5. Work Sans
+
+## Design Tips
+https://ui.shadcn.com/examples/cards
