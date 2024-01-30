@@ -5,44 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <style>
+    h2, h3, h4, h5 {
+        margin-top: .2em;
+        margin-bottom: .2em;
+    }
+    p {
+        margin-top: .3em;
+    }
     .info-table {
         width: 100%;
     }
     #info-name {
+        font-family: "Lexend Deca";
+        text-transform: uppercase;
         width: 80%;
         text-align: left;
-    }
-    #info-name {
-        vertical-align: bottom;
+        vertical-align: middle;
     }
     #info-name h1 {
         font-weight: normal;
     }
     #info-job-title {
-        vertical-align: bottom;
-    }
-    #info-job-title p{
+        font-family: "Lexend Deca";
         text-align: right;
         text-transform: uppercase;
+        vertical-align: middle;
     }
     .profile-table {
         width: 100%;
     }
     #profile-title {
+        font-family: "Lexend Deca";
+        text-transform: uppercase;
         vertical-align: bottom;
         text-align: left;
     }
     #profile-text {
+        font-family: "Work Sans";
+        font-size: 0.8em;
         vertical-align: top;
-        width: 80%;
+        width: 75%;
     }
     #profile-contact {
+        font-family: "Work Sans";
+        font-size: 0.8em;
         vertical-align: top;
         text-align: right;
     }
+    hr {
+        border: 0;
+        border-top: 1px solid black;
+    }
     .experience-education {
         width: 100%;
+        border: none;
+        border-collapse: collapse;
+    }
+    .experience-education td {
+        border-left: 1px solid black;
+        padding-left: 0.5em;
+    }
+    .experience-education td:first-child {
+        border-left: none;
+    }
+    .experience-education th {
+        font-family: "Lexend Deca";
+        text-transform: uppercase;
+    }
+    #education-row {
+        width: 25%;
+    }
+    #experience-row {
+        width: 60%;
+    }
+    .experience-education tr, th, td {
+        vertical-align: top;
+    }
+    .experience-education-actual h4 {
+        font-family: "Lexend Deca";
+        text-transform: uppercase;
+        font-size: .9em;
+    }
+    .experience-education-actual h5 {
+        font-family: "Lexend Deca";
+        text-transform: uppercase;
+        font-size: 0.7em;
+    }
+    .experience-education-actual p {
+        font-family: "Work Sans";
+        font-size: 0.8em;
     }
 </style>
 </head>
@@ -51,7 +106,7 @@
 <table class="info-table">
     <tr>
         <td id="info-name"><h1>Name <b>Surname</b></h1></td>
-        <td id="info-job-title"><p>Job Title</p></td>
+        <td id="info-job-title">Job Title</td>
     </tr>
 </table>
 
@@ -65,10 +120,52 @@
     </tr>
 </table>
 
+<hr>
+
 <table class="experience-education">
     <tr>
-        <th>Education</th>
-        <th>Experience</th>
+        <th id="education-row"><h3>Education</h3></th>
+        <th id="experience-row"><h3>Experience</h3></th>
+    </tr>
+    <tr>
+        <td class="experience-education-actual">
+            <h4>School Name</h4>
+            <h5>Date Start - Present</h5>
+            <p>Information goes here, make sure that it reads decently and it's not too long.</p>
+        </td>
+        <td class="experience-education-actual">
+            <h4>Job Title</h4>
+            <h5>Job Company<br>Date Start - Present</h5>
+            <p>Job duties go here, make sure that it reads decently and it's not too long but also include anything totally relevant.</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="experience-education-actual">
+            <h4>School Name</h4>
+            <h5>Date Start - Present</h5>
+            <p>Information goes here, make sure that it reads decently and it's not too long.</p>
+        </td>
+        <td class="experience-education-actual">
+            <h4>Job Title</h4>
+            <h5>Job Company<br>Date Start - Present</h5>
+            <p>Job duties go here, make sure that it reads decently and it's not too long but also include anything totally relevant.</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="experience-education-actual"></td>
+        <td class="experience-education-actual">
+            <h4>Job Title</h4>
+            <h5>Job Company<br>Date Start - Present</h5>
+            <p>Job duties go here, make sure that it reads decently and it's not too long but also include anything totally relevant.</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="experience-education-actual"></td>
+        <td class="experience-education-actual">
+            <h4>Job Title</h4>
+            <h5>Job Company<br>Date Start - Present</h5>
+            <p>Job duties go here, make sure that it reads decently and it's not too long but also include anything totally relevant.</p>
+        </td>
     </tr>
 </table>
 </body>
