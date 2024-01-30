@@ -6,167 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume Template</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 <style>
-    h2, h3, h4, h5 {
-        margin-top: .2em;
-        margin-bottom: .2em;
-    }
-    p {
-        margin-top: .3em;
-    }
-    .info-table {
-        width: 100%;
-    }
-    #info-name {
-        font-family: "Lexend Deca";
-        text-transform: uppercase;
-        width: 80%;
-        text-align: left;
-        vertical-align: middle;
-    }
-    #info-name h1 {
-        font-weight: normal;
-    }
-    #info-job-title {
-        font-family: "Lexend Deca";
-        text-align: right;
-        text-transform: uppercase;
-        vertical-align: middle;
-    }
-    .profile-table {
-        width: 100%;
-    }
-    #profile-title {
-        font-family: "Lexend Deca";
-        text-transform: uppercase;
-        vertical-align: bottom;
-        text-align: left;
-    }
-    #profile-text {
-        font-family: "Work Sans";
-        font-size: 0.8em;
-        vertical-align: top;
-        width: 75%;
-    }
-    #profile-contact {
-        font-family: "Work Sans";
-        font-size: 0.8em;
-        vertical-align: top;
-        text-align: right;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid black;
-    }
-    .experience-education {
-        width: 100%;
-        border: none;
-        border-collapse: collapse;
-    }
-    .experience-education td {
-        border-left: 1px solid black;
-        padding-left: 0.5em;
-    }
-    .experience-education td:first-child {
-        border-left: none;
-    }
-    .experience-education th {
-        font-family: "Lexend Deca";
-        text-transform: uppercase;
-    }
-    #education-row {
-        width: 25%;
-    }
-    #experience-row {
-        width: 60%;
-    }
-    .experience-education tr, th, td {
-        vertical-align: top;
-    }
-    .experience-education-actual h4 {
-        font-family: "Lexend Deca";
-        text-transform: uppercase;
-        font-size: .9em;
-    }
-    .experience-education-actual h5 {
-        font-family: "Lexend Deca";
-        text-transform: uppercase;
-        font-size: 0.7em;
-    }
-    .experience-education-actual p {
-        font-family: "Work Sans";
-        font-size: 0.8em;
-    }
+
+html {
+    font-family: "Open Sans";
+}
+
+.frame {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 5% 2% 5%;
+}
+
+.card {
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgb(220, 220, 220);
+    height: 100%;
+}
+
+h1 {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+#job-title, #summary-contact {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#summary, #education {
+    display: inline-block;
+    width: 60%;
+}
+
 </style>
 </head>
 <body>
 
-<table class="info-table">
-    <tr>
-        <td id="info-name"><h1>Name <b>Surname</b></h1></td>
-        <td id="info-job-title">Job Title</td>
-    </tr>
-</table>
+    <div class="frame">
+        <div class="card" id="name">
+            <h1>Christopher <b>Wright</b></h1>
+        </div>
+        <div class="card" id="job-title">
+            <h4>Customer Service Specialist</h4>
+        </div>
+    </div>
 
-<table class="profile-table">
-    <tr>
-        <th id="profile-title"><h2>Profile</h2></th>
-    </tr>
-    <tr id="profile-text-row">
-        <td id="profile-text">Lorem ipsum or something idk just this is where we write all the stuff okay. Lorem ipsum or something idk just this is where we write all the stuff okay.</td>
-        <td id="profile-contact">(555) 555-5555<br>email@address.com</td>
-    </tr>
-</table>
+    <div class="frame">
+        <div class="card" id="summary">
+            <h2>Summary</h2>
+            <p>I am an experienced library customer-service specialist with engaging patron-experience skills and a focus on technology and music.</p>
+        </div>
+        <div class="card" id="summary-contact">
+            <p>(302) 359-0237<br>jpchriswright@icloud.com<br>105 Leeford Ct<br>Irmo, SC 29063</p>
+        </div>
+    </div>
 
-<hr>
+    <div class="frame">
+        <div class="card" id="education">
+            <h2>Education</h2>
+            <h3>Mississippi State University</h3>
+            <h5>Art/Design 2013-2014</h5>
+            <p>While attending MSU, I took  many core classes and art/design classes. With Cisco, I took computer skills courses covering the Microsoft Office Suite.</p>
+        </div>
+    </div>
 
-<table class="experience-education">
-    <tr>
-        <th id="education-row"><h3>Education</h3></th>
-        <th id="experience-row"><h3>Experience</h3></th>
-    </tr>
-    <tr>
-        <td class="experience-education-actual">
-            <h4>School Name</h4>
-            <h5>Date Start - Present</h5>
-            <p>Information goes here, make sure that it reads decently and it's not too long.</p>
-        </td>
-        <td class="experience-education-actual">
-            <h4>Job Title</h4>
-            <h5>Job Company<br>Date Start - Present</h5>
-            <p>Job duties go here, make sure that it reads decently and it's not too long but also include anything totally relevant.</p>
-        </td>
-    </tr>
-    <tr>
-        <td class="experience-education-actual">
-            <h4>School Name</h4>
-            <h5>Date Start - Present</h5>
-            <p>Information goes here, make sure that it reads decently and it's not too long.</p>
-        </td>
-        <td class="experience-education-actual">
-            <h4>Job Title</h4>
-            <h5>Job Company<br>Date Start - Present</h5>
-            <p>Job duties go here, make sure that it reads decently and it's not too long but also include anything totally relevant.</p>
-        </td>
-    </tr>
-    <tr>
-        <td class="experience-education-actual"></td>
-        <td class="experience-education-actual">
-            <h4>Job Title</h4>
-            <h5>Job Company<br>Date Start - Present</h5>
-            <p>Job duties go here, make sure that it reads decently and it's not too long but also include anything totally relevant.</p>
-        </td>
-    </tr>
-    <tr>
-        <td class="experience-education-actual"></td>
-        <td class="experience-education-actual">
-            <h4>Job Title</h4>
-            <h5>Job Company<br>Date Start - Present</h5>
-            <p>Job duties go here, make sure that it reads decently and it's not too long but also include anything totally relevant.</p>
-        </td>
-    </tr>
-</table>
 </body>
 </html>
