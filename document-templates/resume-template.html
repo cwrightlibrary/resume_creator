@@ -14,6 +14,35 @@ html {
     font-family: "Open Sans";
 }
 
+p, li {
+    font-size: 12px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+h1, h4 {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: -10px;
+}
+
+h5 {
+    margin-top: -20px;
+}
+
+ul {
+    columns: 2;
+    --webkit-columns: 2;
+    -moz-columns: 2;
+}
+
 .frame {
     display: flex;
     justify-content: space-between;
@@ -29,14 +58,16 @@ html {
     height: 100%;
 }
 
-h1 {
-    font-weight: normal;
-    text-transform: capitalize;
+#name {
+    padding: 10px 20px 10px 20px;
 }
 
-h4 {
-    font-weight: normal;
-    text-transform: capitalize;
+#summary-contact {
+    padding: 15px 20px;
+}
+
+#frame-summary {
+    align-items: center;
 }
 
 #job-title, #summary-contact {
@@ -44,9 +75,23 @@ h4 {
     margin-top: auto;
 }
 
-#summary, #education {
+#summary, #education, #experience, #skills, #contact {
     display: inline-block;
     width: 60%;
+}
+
+#education {
+    width: 30%;
+    margin-right: 20px;
+}
+
+#skills {
+    width: 90%;
+    margin-right: 20px;
+}
+
+#contact {
+    width: 20%;
 }
 
 </style>
@@ -62,22 +107,71 @@ h4 {
         </div>
     </div>
 
-    <div class="frame">
+    <div class="frame" id="frame-summary">
         <div class="card" id="summary">
             <h2>Summary</h2>
             <p>I am an experienced library customer-service specialist with engaging patron-experience skills and a focus on technology and music.</p>
         </div>
         <div class="card" id="summary-contact">
-            <p>(302) 359-0237<br>jpchriswright@icloud.com<br>105 Leeford Ct<br>Irmo, SC 29063</p>
+            <p><br><br>(302) 359-0237<br>jpchriswright@icloud.com<br>105 Leeford Ct<br>Irmo, SC 29063</p>
         </div>
     </div>
 
     <div class="frame">
         <div class="card" id="education">
             <h2>Education</h2>
+
             <h3>Mississippi State University</h3>
             <h5>Art/Design 2013-2014</h5>
             <p>While attending MSU, I took  many core classes and art/design classes. With Cisco, I took computer skills courses covering the Microsoft Office Suite.</p>
+
+            <h3>Animation Mentor</h3>
+            <h5>Character Animator 2015-2017</h5>
+            <p>I developed my animation skills by studying motion and its mechanics as well as acting. I also tutored other struggling students and volunteered to help animate a short film.</p>
+        </div>
+        
+        <div class="card" id="experience">
+            <h2>Experience</h2>
+
+            <h3>Customer Service Specialist</h3>
+            <h5>Richland Library</h5>
+            <h5>April 2021 - Present</h5>
+            <p>Over the past couple of years in my full-time role, I've supported the local community of library patrons with software and hardware concerns. In addition to my duties in my parttime role, I also create a weekly schedule, brainstorm, plan, and execute programming (such as coding classes, open lab, and playing music live); and I solve any audio-video issues to do with items returned either missing parts or with damaged parts.</p>
+
+            <h3>Associate Librarian</h3>
+            <h5>Richland Library</h5>
+            <h5>March 2019 - April 2019</h5>
+            <p>In my part-time role with Richland Library, I assisted a diverse group of library customers with software and hardware related issues. In addition, I greeted customers while on desk, checked their library materials in and out, and created guest passes for computer use.</p>
+
+            <h3>Custom Framer/Stocker</h3>
+            <h5>Hobby Lobby</h5>
+            <h5>Febrary 2015 - March 2018</h5>
+            <p>As a framer, I assisted customers with many different documents and photos, creating the best possible frame for their needs. As a stockman, I stocked shelves, cleaned the shopping floor and restrooms while also assisting customers.</p>
+
+            <h3>Food Service Worker</h3>
+            <h5>Taco Bell, Charley's Subs, Subway</h5>
+            <h5>2010 - 2014</h5>
+            <p>Recognized by each restaurant for reliability, efficiency, and customer satisfaction.</p>
+
+        </div>
+    </div>
+
+    <div class="frame">
+        <div class="card" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Flexible</li>
+                <li>Great communication</li>
+                <li>Attention to detail</li>
+                <li>Design</li>
+                <li>Programming</li>
+                <li>Excellent English</li>
+            </ul>
+        </div>
+
+        <div class="card" id="contact">
+            <h2>Contact</h2>
+            <p>Christopher Wright<br>(302) 359-0237<br>jpchriswright@icloud.com<br>105 Leeford Ct<br>Irmo, SC 29063</p>
         </div>
     </div>
 
