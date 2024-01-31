@@ -12,11 +12,18 @@
 
 html {
     font-family: "Open Sans";
+    color: rgb(75, 75, 75);
 }
 
-p, li {
+p {
     font-size: 0.8em;
-    margin-top: 1.125em;
+    margin-top: -1.25em;
+    margin-bottom: 1.25em;
+}
+
+li {
+    font-size: 0.8em;
+    margin-top: -1em;
     margin-bottom: 1.25em;
 }
 
@@ -28,23 +35,27 @@ h1 {
 
 h2 {
     font-size: 1.2em;
-    margin-top: 0.5em;
+    margin-top: 0.2em;
+    color:rgb(44, 54, 121)
 }
 
 h3 {
     font-size: 1em;
     margin-top: -1em;
+    color:rgb(88, 96, 153)
 }
 
 h4 {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: normal;
     text-transform: capitalize;
+    margin-top: -0.75em;
 }
 
 h5 {
     font-size: 0.8em;
     margin-top: -1.2em;
+    color:rgb(114, 121, 173)
 }
 
 ul {
@@ -62,25 +73,21 @@ ul {
 
 .card {
     display: flex;
-    padding: 0.625em 1.25em 0.625em 1.25em;
+    padding: 0.3em 1em 0.3em 1em;
     border: 1px solid rgb(200, 200, 200);
     border-radius: 0.625em;
     box-shadow: 0px 1px 3px rgb(220, 220, 220);
     height: 100%;
 }
 
-#frame-header {
-    align-items: center;
-    justify-content: center;
-}
-
 #name {
-    padding: 0.625em 1.25em 0.625em 1.25em;
+    display: inline-block;
+    padding: 0em 6em 0em 1em;
     margin-right: 1em;
 }
 
 #summary-contact {
-    padding: 0.938em 1.25em;
+    padding: 0em 1em;
 }
 
 #frame-summary {
@@ -119,15 +126,18 @@ ul {
     width: 40%;
 }
 
+#color1 {
+    font-weight: bold;
+    color:rgb(44, 54, 121);
+}
+
 </style>
 </head>
 <body>
 
     <div class="frame" id="frame-header">
         <div class="card" id="name">
-            <h1>Christopher <b>Wright</b></h1>
-        </div>
-        <div class="card" id="job-title">
+            <h1>Christopher <span id="color1">Wright</span></h1>
             <h4>Customer Service Specialist</h4>
         </div>
     </div>
@@ -192,7 +202,7 @@ ul {
 
         <div class="card" id="contact">
             <h2>Contact</h2>
-            <p>Christopher Wright<br>(302) 359-0237<br>jpchriswright@icloud.com<br>105 Leeford Ct<br>Irmo, SC 29063</p>
+            <p>(302) 359-0237<br>jpchriswright@icloud.com<br>105 Leeford Ct<br>Irmo, SC 29063</p>
         </div>
     </div>
 
